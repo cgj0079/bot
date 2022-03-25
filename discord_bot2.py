@@ -11,7 +11,6 @@ async def on_ready():
 
 game = discord.Game("명령어를 칠려면 !를 쓰세요")
 bot = commands.Bot(command_prefix='!', status=discord.Status.online, activity=game)
-token ='OTQ2NzQ1MjQxODAzODI1MTUy.YhjLNw.3pZ8mFoSr2fsseCWLv1CydFh8uk'
 
 @bot.command(aliases=['안녕', 'hi', '안녕하세요'])
 async def hello(ctx):
@@ -172,5 +171,5 @@ async def 도움(ctx):
     embed.add_field(name="7. 관리자인지 아닌지 확인", value="!관리자", inline=False)
     embed.add_field(name="8. 명령어 인식", value="명령어가 있는지 확인", inline=False)
     await ctx.send(embed=embed)
-
-bot.run(token)
+access_tocken=os.environ["BOT_TOCKEN"]
+bot.run(access_token)
