@@ -1,6 +1,1 @@
-discord.py
-random.py
-disco.py
-asyncio.py
-os.py
-commands.py
+discord.py==0.16.12
