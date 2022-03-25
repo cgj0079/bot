@@ -171,5 +171,6 @@ async def 도움(ctx):
     embed.add_field(name="7. 관리자인지 아닌지 확인", value="!관리자", inline=False)
     embed.add_field(name="8. 명령어 인식", value="명령어가 있는지 확인", inline=False)
     await ctx.send(embed=embed)
+
 access_tocken=os.environ["BOT_TOCKEN"]
 bot.run(access_token)
